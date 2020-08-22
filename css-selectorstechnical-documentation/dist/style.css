@@ -1,0 +1,171 @@
+/***************
+     Global
+ ***************/
+
+body{
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  width: 100vw;
+}
+
+a{
+  text-decoration: none;
+  color: initial;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h2{
+  font-size: 30px;
+}
+
+h5{
+  font-size: 20px;
+}
+
+/***************
+      Main
+ ***************/
+
+main{
+  margin-left: 300px;
+  padding-left: 50px;
+  padding-right: 5vw;
+  width: 70vw;
+}
+
+main a{
+  color: #3d7e9a;
+}
+
+section{
+  border-bottom: 5px solid #3d7e9a;
+  margin: 20px;
+  padding-bottom: 30px;
+}
+
+pre{
+  background-color: rgba(0,0,0, 0.26);
+  padding-left: 20px;
+  width: 60vw;
+  white-space: pre-wrap;
+  border-left: 5px solid #3d7e9a;
+}
+
+code{
+  width: 40vw;
+  font-family: Lucida Console;
+  font-size: 15px;
+}
+
+p > code{
+  background-color: rgba(0,0,0, 0.26);
+}
+
+/***************
+     Navbar
+ ***************/
+
+#navbar{
+  height: 100%;
+  min-width: 300px;
+  position:fixed;
+  z-index: 1;
+  top:0;
+  left:0;
+  overflow: hidden;
+  padding-top:40px;
+  padding-left: 10px;
+  background-color: rgba(0,0,0,0.06);
+  border-right: 3px solid rgba(0,0,0,0.2);
+}
+
+.nav-header{
+  font-size:29px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+.nav-header, .nav-list{
+  border-bottom: 1px solid;
+}
+
+#navbar ul{
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list{
+  padding: 20px 5px 5px 0px;
+}
+
+/***************
+     Tables
+ ***************/
+
+.intro-table{
+  background-color: #ffe8d4;
+  border-left: 5px solid #f69d3c;
+  width: 40vw;
+  min-width: 100px;
+}
+
+.intro-table td{
+  padding: 12px;
+}
+
+.reference-table{
+  width: 50vw;
+  min-width: 150px;
+  box-shadow: 0 0 1px gray;
+}
+
+.reference-table thead{
+  font-weight: bold;
+  background-color: rgba(212,221,228,.65);
+  border: 2px solid #fff;
+}
+
+.reference-table tbody{
+  background-color: rgba(212,221,228,.25);
+}
+
+.reference-table tbody tr:nth-child(even){
+  background-color: rgba(212,221,228,.15);
+}
+
+/***************
+      Media
+ ***************/
+
+@media screen and (max-width: 1000px){
+
+  #navbar{
+    height: 220px;
+    width:90vw;
+    padding-top: 5px;
+    border: none;
+    background-color: white;
+  }
+  
+  .nav-header{
+    text-align: center;
+    border: none;
+  }
+  
+  .nav-list{
+    padding: 5px 5px 5px 20px;
+    border: 1px solid;
+  }
+  
+  main{
+    margin-left: 5vw;
+    margin-top: 240px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 80vw;
+  }
+  
+}
